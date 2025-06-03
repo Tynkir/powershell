@@ -1,0 +1,1 @@
+Get-QADComputer -sizelimit 0 -OSName '*server*'|export-csv c:\users\smastroianni\desktop\Servers.csv
