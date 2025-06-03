@@ -1,0 +1,2 @@
+Connect-VIServer san1-esxmgmt01
+Get-Cluster -Name PROD | Get-VM | where {$_.PowerState -eq "PoweredOn"}
