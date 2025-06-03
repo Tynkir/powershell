@@ -1,6 +1,6 @@
 
-Get-qadUser -enabled -searchroot "genoptix.org/genoptix/corporate" -sizelimit 10000 | ft Name,department,email,accountexpires,whenCreated,lastlogon -Autosize | out-file .\desktop\users.txt -width 400
+Get-qadUser -enabled -searchroot "/corporate" -sizelimit 10000 | ft Name,department,email,accountexpires,whenCreated,lastlogon -Autosize | out-file .\desktop\users.txt -width 400
 
-Get-qadUser -enabled -searchroot "genoptix.org/genoptix/corporate/users" -sizelimit 10000 | ft Name,department,email,accountexpires,whenCreated,lastlogon -Autosize | out-file .\desktop\internalusers.txt -width 400
+Get-qadUser -enabled -searchroot "/corporate/users" -sizelimit 10000 | ft Name,department,email,accountexpires,whenCreated,lastlogon -Autosize | out-file .\desktop\internalusers.txt -width 400
 
-Get-qadUser -enabled -searchroot "genoptix.org/genoptix/external/users" -sizelimit 10000 | ft Name,department,email,accountexpires,whenCreated,lastlogon -Autosize | out-file .\desktop\externalusers.txt -width 400
+Get-qadUser -enabled -searchroot "/external/users" -sizelimit 10000 | ft Name,department,email,accountexpires,whenCreated,lastlogon -Autosize | out-file .\desktop\externalusers.txt -width 400
